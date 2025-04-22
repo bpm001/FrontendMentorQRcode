@@ -1,0 +1,76 @@
+
+@font-face {
+    font-family: "Outfit";
+    src: url("https://fonts.google.com/specimen/Outfit") format("Outfit");
+  }
+
+  body{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: hsl(212, 45%, 89%);
+    height: 100vh;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 20px;
+    width: 320px;
+    height: 499px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+  }
+  .qrcontainer{
+    background-color: #3685FF;
+    border-radius: 20px;
+    width: 288px;
+    height: 288px;
+  }
+  h2{
+    font-family: "Outfit";
+    font-weight: 900;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5px;
+  }
+  p{
+    margin-top: 5px;
+    font-family: "Outfit";
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+    color: hsl(216, 15%, 48%);
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  @media (max-width: 768px){
+    .card {
+      width: 90%;
+      height:auto
+    }
+    .qrcontainer{
+      margin-top: 5%;
+      display: flex;
+      width: 90%;
+      height: auto;
+      position: relative;
+    }
+    h2{
+      font-size:25px
+    }
+    p{
+      font-size: 25px;
+      padding-bottom: 5%;
+    }
+
+
+  }
